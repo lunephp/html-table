@@ -123,7 +123,7 @@ class Table
         return $this->columns[$id];
     }
 
-    protected function getRow(array $row)
+    protected function getRow($row)
     {
         $cells = [];
         foreach ($this->columns as $id => $column) {
