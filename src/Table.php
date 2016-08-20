@@ -109,7 +109,7 @@ class Table
     public function addRows(array $rows = [])
     {
         foreach($rows as $row){
-            $this->addRow($row)
+            $this->addRow($row);
         }
     }
 
