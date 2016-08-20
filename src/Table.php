@@ -101,9 +101,16 @@ class Table
         return $this->sort_order;
     }
 
-    public function addRow(array $row)
+    public function addRow($row)
     {
         $this->rows[] = $row;
+    }
+
+    public function addRows(array $rows = [])
+    {
+        foreach($rows as $row){
+            $this->addRow($row)
+        }
     }
 
 
