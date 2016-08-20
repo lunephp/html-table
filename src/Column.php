@@ -36,7 +36,7 @@ class Column
     }
 
 
-    public function renderCells(array $row = []):array
+    public function renderCells($row = []):array
     {
         $cells = [];
         foreach ($this->handlers as $handler) {
